@@ -10,9 +10,9 @@ import requests
 logging.basicConfig(level=logging.INFO)
 
 # Получаем токены из переменных окружения
-TG_BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
-VK_TOKEN = os.getenv("VK_TOKEN")
-VK_GROUP_ID = int(os.getenv("VK_GROUP_ID"))
+TG_BOT_TOKEN = os.getenv("8365755716:AAEuESSNjVIqB9GQy37HC3ZAPKfT8oUrtYI")
+VK_TOKEN = os.getenv("vk1.a.wZ3XV87TDHV-M69y3XAq-aaaA48olsabytExM3_cw4hAUY4aU_IdAvimc1-XqILBwWR50y9OklkiU3b51Q5VSYUn7wIX6tG3xRzLgLqTPdNHHv_khlzcuqkGjerm0mJ9_8ScIwln8JMy9sedmy2S3ds1Q1JNGzszCj3VVB-TuxFyDkuI0OqCFMFoSz0Tun9lFNu2ttBEnme5si-qNredwQ")
+VK_GROUP_ID = int(os.getenv("233024610"))
 YOUR_TELEGRAM_ID = int(os.getenv("YOUR_TELEGRAM_ID", 0)) or None
 
 # Инициализация
@@ -90,3 +90,4 @@ async def handle_message(message: types.Message):
 if __name__ == '__main__':
     print("🚀 Бот запущен. Отправляйте контент!")
     asyncio.run(dp.start_polling())
+
