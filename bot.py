@@ -1,13 +1,14 @@
 import os
 import asyncio
 import logging
+from dotenv import load_dotenv
+
+# Загружаем .env
+load_dotenv() 
 import tempfile
 from aiogram import Bot, Dispatcher, types
 import vk_api
 import requests
-
-# Загружаем .env
-load_dotenv() 
 
 # Настройка логов
 logging.basicConfig(level=logging.INFO)
@@ -93,3 +94,4 @@ async def handle_message(message: types.Message):
 if __name__ == '__main__':
     print("🚀 Бот запущен. Отправляйте контент!")
     asyncio.run(dp.start_polling())
+
